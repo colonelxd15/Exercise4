@@ -10,9 +10,17 @@ jQuery(document).ready(function($){
 		loaderHeight = $('#loader img').height();
 		$('#loader img').css({'top':((winHeight/2)-loaderHeight) + 'px','left':((winWidth/2)-loaderWidth) +'px','position':'fixed'
 
+	
 	});
+	$('#team').height(winHeight);
+	$('#facts').height(winHeight);
 	$('#head-images').height(winHeight);
+	$('#parallax').height(winHeight);
 	};
+
+	$(window).scroll(function(){
+		
+	});
 
 	
 });

@@ -1,0 +1,59 @@
+#facts{
+	background: #FFF;
+	height: auto;
+	padding: 50px 68px;
+	#facts-header{
+		margin: auto;
+		width: 300px;
+		height: 100px;
+		position: relative;
+		.header3{
+			margin: 0px auto 50px auto;
+		}
+		.header4{
+			margin: 20px auto;
+		}
+	}
+	.facts-cont{
+		position: relative;
+		width: 250px;
+		height: auto;
+		float: left;
+		margin-right: 45px;
+		&:last-child{
+			margin: 0px;
+		}
+		.header7{
+			margin: 30px auto;
+		}
+		.facts-desc{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			color: #7F7F7F;
+			text-align: center;
+			margin: 20px auto;
+		}
+		
+		#tweet{
+			background: url('../resources/icons/facts.png') 0 0 #4CDDF3;
+		}
+		#client{
+			background: url('../resources/icons/facts.png') -73px 0px #4CDDF3;
+		}
+		#project{
+			background: url('../resources/icons/facts.png') -146px 0px #4CDDF3;
+		}
+		#coffee{
+			background: url('../resources/icons/facts.png') -219px 0px #4CDDF3;
+		}
+		#tweet,
+		#client,
+		#project,
+		#coffee{
+			height: 71px;
+			width: 73px;
+			margin: auto;
+		}
+	}
+}

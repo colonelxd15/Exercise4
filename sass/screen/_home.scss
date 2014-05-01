@@ -160,22 +160,10 @@ $font-head1: 'Open Sans', sans-serif;
 	margin: 30px auto;
 	width: 100px;
 }
-.header1,.header2{
-	text-align:center;
-	font-family: 'open sans', sans-serif;
-}
-.header1{
-	color: #404141;
-	font-size: 37PX;
-	letter-spacing: 5PX;
-}
-.header2{
-	color: #757575;
-	font-size: 17PX;
-	font-weight: 300;
-}
+
 #about{
 	background: #F7F7F7;
+	padding-bottom: 65px;
 }
 #about-header{
 	height: 275px;
@@ -296,5 +284,190 @@ nav{
 		margin: 5px;
 		float: left;
 	}
+}
+#goto-top{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: 10;
+	border-radius: 50px;
+	background: #4CDDF3;
+	p{
+		line-height: 30px;
+		text-align: center;
+	}
+}
+#studio-about{
+	padding:80px 68px 70px 68px;
+	height: 700px;
+	background: #FFF;
+	.sect-col-2{
+		height: 700px;
+		width: 550px;
+		float: left;
+		padding: 0px 10px;
+		position: relative;
+		#next_image,#prev_image{
+			top: 235px;
+			position: absolute;
+			width: 35px;
+			height: 65px;
+			background: #111;
+			&:hover{
+				background: #4CDDF3;
+			}
+		}
+		#next_image{
+			right: 0px;
+			background: url('../resources/icons/c-arrows.png') -15px -95px;
+			background-repeat: 	no-repeat;
+			background-color: #000;
+		}
+		#prev_image{
+			left: 0px;
+			background: url('../resources/icons/c-arrows.png') -15px -10px;
+			background-repeat: no-repeat;
+			background-color: #000;
+		}
+		#office-carousel-cont{
+			width: 500px;
+			height: 350px;
+			overflow: hidden;
+			margin: auto;
+			#office-carousel{
+				width: 1000px;
+				height: 350px;
+				img{
+					margin: 0px;
+				}
+			}
+		}
+		.about{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			line-height: 26px;
+			color: #888;
+			a{
+				text-decoration: none;
+				&:hover,&:link,&:active,&:visited{
+					color: #4CDDF3;
+				}
+			}
+		}
+	}
+}
 
+.cont-bg{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	.cont-bg-2{
+		height: 40%;
+		width: 80%;
+		left: 10%;
+		bottom: 0%;
+	}
+	.cont-bg-3{
+		height: 50%;
+		width: 50%;
+		left: 25%;
+		bottom: 0%;
+	}
+	.cont-bg-2, .cont-bg-3{
+		position: absolute;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+.pos-abs{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 50px;
+	.header1{
+		margin: 20px 0px;
+	}
+}
+#team{
+	background: #F7F7F7;
+	width: auto;
+	height: 700px;
+	position: relative;
+	padding: 50px 68px;
+	.team-prof{
+		margin-right: 45px;
+		float: left;
+		width: 255px;
+		height: 416px;
+		.team-prof-pic,
+		.profile{
+			position: relative;
+		}
+		.team-prof-pic{
+			height: 213px;
+			width: 255px;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+			.email{
+				background-repeat: no-repeat;
+				background: url('../resources/icons/color-icons.png') 0px 50px;
+				height: 20px;
+				width:30px;
+				top: 0px;
+				left: 50%;
+			}
+			.email-add{}
+			img,.email.email-add{
+				position: absolute;
+				float: none;
+			}
+		}
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+
+	.profile{
+		padding: 30px;
+		width: 195px;
+		height: 153px;
+		.social{
+			height: 25px;
+			width: 115px;
+			margin: 20px auto;
+
+			.social-fb{
+				background: url('../resources/icons/social.png') 0 0;
+			}
+			.social-tw{
+				background: url('../resources/icons/social.png') -25px 0px;
+			}
+			.social-tu{
+				background: url('../resources/icons/social.png') -75px 0px;
+			}
+			.social-fb,.social-tw,.social-tu{
+				background-repeat: no-repeat;
+				height: 25px;
+				width: 25px;
+				margin-right: 20px;
+				float: left;
+				&:last-child{
+					margin: 0px;
+				}
+			}
+		}
+	}
+}
+.pos-rel{
+	position: relative;
+	z-index: 100;
+	width: 600px;
+	margin: 50px auto 20px auto;
+	.header1{
+		margin: 20px 0px;
+	}
 }
