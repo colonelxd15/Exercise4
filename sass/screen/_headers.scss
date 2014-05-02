@@ -15,7 +15,6 @@
 .header4{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	font-weight: 400;
 	color: #D7D9DA;
 }
 .header5{
@@ -31,11 +30,76 @@
 	line-height: 75px;
 	color: #000;
 }
+.header8{
+	font-size: 35px;
+	color: #FFF;
+}
+.serv-label{
+	font-size: 18px;
+	color: #434242;
+}
+.t-car-text{
+	font-size: 14px;
+	color: #ACACAC;
+}
+.t-car-text2{
+	color: #474747;
+	font-weight: 700;
+}
+.port-btn-prop{
+	font-size: 15px;
+	color: #C1C1C1;
+}
+
+.client-text-1{
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #FFF;
+}
+.client-text-2{
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #555;
+}
+.contact-text-1{
+	color: #3F3F3F;
+}
+.contact-text-2{
+	color: #A8A8A8;
+}
+input[type="text"]{
+	font-family: 'Montserrat',sans-serif;
+	font-size: 13px;
+	color: #A8A8A8;
+}
+
+
+.contact-text-1,
+.contact-text-2{
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+.header4,
+.serv-label,
+.port-btn-prop,
+.client-text-1{
+	font-weight: 400;
+}
+
 
 .header2,
 .header3,
-.header7{
+.header7,
+.header8,
+input[type="text"]{
 	font-weight: 300;
+}
+
+.foot-text{
+	font-size: 13px;
+	color: #AAA;
 }
 .header1,
 .header2,
@@ -50,12 +114,35 @@
 	margin: 30px auto 20px auto;
 	text-align: center;
 }
-
 .header1,
 .header2,
 .header3,
 .header5,
 .header6,
-.header7{
+.header7,
+.header8,
+.serv-label,
+.t-car-text,
+.t-car-text2,
+.port-btn-prop,
+.client-text-1,
+.client-text-2,
+.contact-text-1,
+.contact-text-2{
 	font-family: 'Open Sans', sans-serif;
 }
+
+.dark{
+	color: #404040;
+}
+.light{
+	color: #FFF;
+}
+.separate{
+	text-align: center;
+	margin: 30px auto;
+}
+input[type="submit"].light{
+	background: #4CDDF3;
+}
+

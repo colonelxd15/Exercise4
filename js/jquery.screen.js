@@ -16,6 +16,11 @@ jQuery(document).ready(function($){
 	$('#facts').height(winHeight);
 	$('#head-images').height(winHeight);
 	$('#parallax').height(winHeight);
+	$('#services').height(winHeight);
+	$('#services-2').height(winHeight);
+	$('#video').height(winHeight);
+	$('#portfolio').height(winHeight);
+	$('#map').height(winHeight);
 	};
 
 	$(window).scroll(function(){

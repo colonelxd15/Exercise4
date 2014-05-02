@@ -1,0 +1,31 @@
+#parallax{
+	background: url('../resources/parallax/parallax-02.png') #4CDDF3;
+	position: relative;
+	overflow: hidden;
+	#para-header{
+		height: 200px;
+		width: 480px;
+		margin: 50px auto;
+		.header4{
+			opacity: 0.5;
+		}
+	}
+	#parallax-bg{
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+		#parallax-layer-1{
+		width: 90%;
+		height: 50%;
+		position: absolute;
+		bottom: 0%;
+		left: 5%;
+			img{
+				width: 100%;
+				height: 100%;
+			}	
+		}
+
+	}
+}

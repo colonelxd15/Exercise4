@@ -306,7 +306,7 @@ nav #prev_image:hover, nav #next_image:hover {
   background: #4CDDF3;
 }
 /* line 202, ../sass/screen/_home.scss */
-nav #portfolio {
+nav #portfolio-nav {
   margin: 10px 110px;
   height: 40px;
   width: 180px;
@@ -317,7 +317,7 @@ nav #portfolio {
   line-height: 40px;
 }
 /* line 211, ../sass/screen/_home.scss */
-nav #portfolio:hover {
+nav #portfolio-nav:hover {
   background: #E1E1E1;
 }
 
@@ -658,37 +658,120 @@ nav #portfolio:hover {
 .header4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  font-weight: 400;
   color: #D7D9DA;
 }
 
-/* line 21, ../sass/screen/_headers.scss */
+/* line 20, ../sass/screen/_headers.scss */
 .header5 {
   font-size: 14px;
   color: #7F7F7F;
 }
 
-/* line 25, ../sass/screen/_headers.scss */
+/* line 24, ../sass/screen/_headers.scss */
 .header6 {
   font-size: 18px;
   color: #030303;
 }
 
-/* line 29, ../sass/screen/_headers.scss */
+/* line 28, ../sass/screen/_headers.scss */
 .header7 {
   font-size: 100px;
   line-height: 75px;
   color: #000;
 }
 
+/* line 33, ../sass/screen/_headers.scss */
+.header8 {
+  font-size: 35px;
+  color: #FFF;
+}
+
 /* line 37, ../sass/screen/_headers.scss */
-.header2,
-.header3,
-.header7 {
-  font-weight: 300;
+.serv-label {
+  font-size: 18px;
+  color: #434242;
+}
+
+/* line 41, ../sass/screen/_headers.scss */
+.t-car-text {
+  font-size: 14px;
+  color: #ACACAC;
 }
 
 /* line 45, ../sass/screen/_headers.scss */
+.t-car-text2 {
+  color: #474747;
+  font-weight: 700;
+}
+
+/* line 49, ../sass/screen/_headers.scss */
+.port-btn-prop {
+  font-size: 15px;
+  color: #C1C1C1;
+}
+
+/* line 54, ../sass/screen/_headers.scss */
+.client-text-1 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #FFF;
+}
+
+/* line 59, ../sass/screen/_headers.scss */
+.client-text-2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+/* line 64, ../sass/screen/_headers.scss */
+.contact-text-1 {
+  color: #3F3F3F;
+}
+
+/* line 67, ../sass/screen/_headers.scss */
+.contact-text-2 {
+  color: #A8A8A8;
+}
+
+/* line 70, ../sass/screen/_headers.scss */
+input[type="text"] {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 13px;
+  color: #A8A8A8;
+}
+
+/* line 78, ../sass/screen/_headers.scss */
+.contact-text-1,
+.contact-text-2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* line 87, ../sass/screen/_headers.scss */
+.header4,
+.serv-label,
+.port-btn-prop,
+.client-text-1 {
+  font-weight: 400;
+}
+
+/* line 96, ../sass/screen/_headers.scss */
+.header2,
+.header3,
+.header7,
+.header8,
+input[type="text"] {
+  font-weight: 300;
+}
+
+/* line 100, ../sass/screen/_headers.scss */
+.foot-text {
+  font-size: 13px;
+  color: #AAA;
+}
+
+/* line 109, ../sass/screen/_headers.scss */
 .header1,
 .header2,
 .header3,
@@ -699,20 +782,50 @@ nav #portfolio:hover {
   margin: auto;
 }
 
-/* line 49, ../sass/screen/_headers.scss */
+/* line 113, ../sass/screen/_headers.scss */
 .header5 {
   margin: 30px auto 20px auto;
   text-align: center;
 }
 
-/* line 59, ../sass/screen/_headers.scss */
+/* line 131, ../sass/screen/_headers.scss */
 .header1,
 .header2,
 .header3,
 .header5,
 .header6,
-.header7 {
+.header7,
+.header8,
+.serv-label,
+.t-car-text,
+.t-car-text2,
+.port-btn-prop,
+.client-text-1,
+.client-text-2,
+.contact-text-1,
+.contact-text-2 {
   font-family: 'Open Sans', sans-serif;
+}
+
+/* line 135, ../sass/screen/_headers.scss */
+.dark {
+  color: #404040;
+}
+
+/* line 138, ../sass/screen/_headers.scss */
+.light {
+  color: #FFF;
+}
+
+/* line 141, ../sass/screen/_headers.scss */
+.separate {
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* line 145, ../sass/screen/_headers.scss */
+input[type="submit"].light {
+  background: #4CDDF3;
 }
 
 /* line 1, ../sass/screen/_facts.scss */
@@ -723,7 +836,7 @@ nav #portfolio:hover {
 }
 /* line 5, ../sass/screen/_facts.scss */
 #facts #facts-header {
-  margin: auto;
+  margin: 50px auto;
   width: 300px;
   height: 100px;
   position: relative;
@@ -785,4 +898,203 @@ nav #portfolio:hover {
   height: 71px;
   width: 73px;
   margin: auto;
+}
+
+/* line 1, ../sass/screen/_parallax.scss */
+#parallax {
+  background: url("../resources/parallax/parallax-02.png") #4cddf3;
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, ../sass/screen/_parallax.scss */
+#parallax #para-header {
+  height: 200px;
+  width: 480px;
+  margin: 50px auto;
+}
+/* line 9, ../sass/screen/_parallax.scss */
+#parallax #para-header .header4 {
+  opacity: 0.5;
+}
+/* line 13, ../sass/screen/_parallax.scss */
+#parallax #parallax-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* line 18, ../sass/screen/_parallax.scss */
+#parallax #parallax-bg #parallax-layer-1 {
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+}
+/* line 24, ../sass/screen/_parallax.scss */
+#parallax #parallax-bg #parallax-layer-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../sass/screen/_services.scss */
+#services {
+  padding: 29.72% 5.26% 0% 5.26%;
+}
+/* line 3, ../sass/screen/_services.scss */
+#services #serv-header {
+  width: 700px;
+  margin: auto;
+}
+/* line 7, ../sass/screen/_services.scss */
+#services .serv-cont {
+  position: relative;
+  float: left;
+  height: 140px;
+  width: 171px;
+  padding: 30px;
+}
+/* line 13, ../sass/screen/_services.scss */
+#services .serv-cont .circle {
+  height: 110px;
+  width: 110px;
+  border-radius: 110px;
+  margin: 10px auto 30px;
+}
+/* line 19, ../sass/screen/_services.scss */
+#services .serv-cont p {
+  text-align: center;
+}
+/* line 23, ../sass/screen/_services.scss */
+#services .serv-cont #tool {
+  background: url("../resources/icons/sl-icons.png") 0px 0px #4cddf3;
+}
+/* line 26, ../sass/screen/_services.scss */
+#services .serv-cont #diamond {
+  background: url("../resources/icons/sl-icons.png") -110px 0px #4cddf3;
+}
+/* line 29, ../sass/screen/_services.scss */
+#services .serv-cont #globe {
+  background: url("../resources/icons/sl-icons.png") -220px 0px #4cddf3;
+}
+/* line 32, ../sass/screen/_services.scss */
+#services .serv-cont #pin {
+  background: url("../resources/icons/sl-icons.png") -330px 0px #4cddf3;
+}
+/* line 35, ../sass/screen/_services.scss */
+#services .serv-cont #clock {
+  background: url("../resources/icons/sl-icons.png") -440px 0px #4cddf3;
+}
+
+/* line 1, ../sass/screen/_services-2.scss */
+#service {
+  background: #F7F7F7;
+}
+
+/* line 4, ../sass/screen/_services-2.scss */
+#services-2 {
+  position: relative;
+}
+/* line 6, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv {
+  width: 40%;
+  height: 60%;
+  padding: 5%;
+  float: left;
+}
+/* line 11, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .cont-serv-header {
+  height: 50px;
+}
+/* line 14, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg {
+  height: 30px;
+  width: 90%;
+  margin: 30px auto;
+  background: #DEDEDE;
+  border-radius: 3px;
+}
+/* line 20, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg .prog-fill {
+  height: 30px;
+  background: url("../resources/icons/skill-sprite.png") #4cddf3;
+}
+/* line 24, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg #w-60 {
+  width: 60%;
+}
+/* line 27, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg #w-70 {
+  width: 70%;
+}
+/* line 30, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg #w-80 {
+  width: 80%;
+}
+/* line 33, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg #w-90 {
+  width: 90%;
+}
+/* line 36, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .prog-bg #w-100 {
+  width: 100%;
+}
+/* line 40, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv img {
+  border-radius: 99px;
+  position: relative;
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+/* line 46, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .t-car-cont {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+/* line 50, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .t-car-cont .t-car-conts {
+  height: 35%;
+  width: 96%;
+  padding: 2%;
+}
+/* line 56, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv .t-car-text {
+  width: 75%;
+  position: relative;
+  float: left;
+  margin-bottom: 2%;
+}
+/* line 63, ../sass/screen/_services-2.scss */
+#services-2 .cont-serv span {
+  float: left;
+}
+
+/* line 68, ../sass/screen/_services-2.scss */
+#testimonials-carousel {
+  width: 300%;
+  height: 100%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+/* line 74, ../sass/screen/_services-2.scss */
+#left {
+  float: left;
+}
+
+/* line 77, ../sass/screen/_services-2.scss */
+#right {
+  float: right;
+}
+
+/* line 80, ../sass/screen/_services-2.scss */
+#car-holder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 85, ../sass/screen/_services-2.scss */
+#video {
+  background: #000;
 }

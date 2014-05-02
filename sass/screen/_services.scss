@@ -1,0 +1,39 @@
+#services{
+	padding: 29.72% 5.26% 0% 5.26%;
+	#serv-header{
+		width: 700px;
+		margin: auto;
+	}
+	.serv-cont{
+		position: relative;
+		float: left;
+		height: 140px;
+		width: 171px;
+		padding: 30px;
+		.circle{
+			height: 110px;
+			width: 110px;
+			border-radius: 110px;			
+			margin: 10px auto 30px;
+		}
+		p{
+			text-align: center;
+		}
+
+			#tool{
+				background: url('../resources/icons/sl-icons.png') 0px 0px #4CDDF3;
+			}
+			#diamond{
+				background: url('../resources/icons/sl-icons.png') -110px 0px #4CDDF3;	
+			}
+			#globe{
+				background: url('../resources/icons/sl-icons.png') -220px 0px #4CDDF3;
+			}
+			#pin{
+				background: url('../resources/icons/sl-icons.png') -330px 0px #4CDDF3;
+			}
+			#clock{
+				background: url('../resources/icons/sl-icons.png') -440px 0px #4CDDF3;
+			}
+	}	
+}
