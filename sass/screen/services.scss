@@ -1,5 +1,5 @@
 #services{
-	padding: 110px 68px 0px 68px;
+	padding: 195px 68px 0px 68px;
 	#serv-header{
 		width: 700px;
 		margin: auto;
@@ -47,12 +47,15 @@
 			height: 200px;
 		}
 		.prog-bg{
-			height: 30px;
+			height: 36px;
 			width: 90%;
 			margin: 30px auto;
 			background: #DEDEDE;
 			.prog-fill{
 				background: url('../resources/icons/skills-sprite.png') #4CDDF3;
+				p{
+					float: left;
+				}
 			}
 			#60{
 				width: 60%;

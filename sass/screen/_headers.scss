@@ -46,10 +46,8 @@
 	color: #474747;
 	font-weight: 700;
 }
-.port-btn-prop{
-	font-size: 15px;
-	color: #C1C1C1;
-}
+
+
 
 .client-text-1{
 	font-size: 16px;
@@ -73,7 +71,21 @@ input[type="text"]{
 	color: #A8A8A8;
 }
 
+.prog-fill-text{
 
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 36px;
+	color: #FFF;
+	padding-left: 18px;
+	p{
+		float: left;
+	}
+}
+.port-btn-prop{
+	font-size: 15px;
+	color: #C1C1C1;
+}
 .contact-text-1,
 .contact-text-2{
 	font-size: 15px;
@@ -103,7 +115,6 @@ input[type="text"]{
 }
 .header1,
 .header2,
-.header3,
 .header4,
 .header6,
 .header7{
@@ -111,7 +122,7 @@ input[type="text"]{
 	margin: auto;
 }
 .header5{
-	margin: 30px auto 20px auto;
+	margin: 10px auto 20px auto;
 	text-align: center;
 }
 .header1,
@@ -128,7 +139,9 @@ input[type="text"]{
 .client-text-1,
 .client-text-2,
 .contact-text-1,
-.contact-text-2{
+.contact-text-2,
+.prog-fill-text,
+.port-nav-prop{
 	font-family: 'Open Sans', sans-serif;
 }
 

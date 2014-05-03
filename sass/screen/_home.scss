@@ -157,7 +157,6 @@ $font-head1: 'Open Sans', sans-serif;
 	width: 50px;
 }
 .separator1{
-	margin: 30px auto;
 	width: 100px;
 }
 
@@ -208,6 +207,7 @@ nav{
 		color: #FFF;
 		text-align: center;
 		line-height: 40px;
+		float: left;
 		&:hover{
 			background: #E1E1E1;
 		}
@@ -298,11 +298,11 @@ nav{
 	}
 }
 #studio-about{
-	padding:80px 68px 70px 68px;
-	height: 700px;
+	padding:155px 68px 80px 68px;
+	height: 461px;
 	background: #FFF;
 	.sect-col-2{
-		height: 700px;
+		height: 461px;
 		width: 550px;
 		float: left;
 		padding: 0px 10px;
@@ -385,7 +385,7 @@ nav{
 	position: absolute;
 	z-index: 100;
 	width: 100%;
-	top: 50px;
+	top: 140px;
 	.header1{
 		margin: 20px 0px;
 	}
@@ -470,4 +470,16 @@ nav{
 	.header1{
 		margin: 20px 0px;
 	}
+}
+.header3{
+	margin: 10px auto 50px auto;
+	text-align: center;
+}
+p.header2{
+	width: 700px;
+	padding: 50px;
+}
+p.header1{
+	width: auto;
+	margin-bottom: 30px;
 }

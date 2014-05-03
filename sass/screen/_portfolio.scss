@@ -1,0 +1,84 @@
+#portfolio{
+	background: #F7F7F7
+}
+.port-header{
+	padding-top: 120px;
+	background: #F7F7F7;
+}
+#clients{
+	position: relative;
+	height: 400px;
+}
+.clients-info{
+	position: relative;
+	float: left;
+	height: 200px;
+	width: 258px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	section{
+		height: 98px;
+		width: 218px;
+		padding: 51px 20px;
+		position: absolute;
+		opacity: 0;
+		background: rgba(76, 221, 243, 0.9);
+		
+		top: 0;
+		div{
+			background: url('../resources/icons/color-icons.png') -44px 0 no-repeat;
+			height: 44px;
+			width: 44px;
+			margin: auto;
+		}
+		.client-text-1{
+			margin-top: 30px;
+		}
+		.client-text-1,
+		.client-text-2{
+			text-align: center;
+		}
+	}
+}
+#port-btn{
+	height: 30px;
+	width: 600px;
+	margin: 0px auto 70px auto;
+	#port-btn-cont{
+		.port-btn-prop{
+		line-height: 32px;
+		margin: 0 5px 10px; 
+		padding: 0px 22px 0px 22px;
+		position: relative;
+		background: #FFF;
+		float: left;
+		border-radius: 3px;
+			&:hover{
+				background: #4CDDF3;
+				color: #FFF;
+			}
+		}
+	}
+}
+#works-car{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 85px 0px;
+	#works-car-cont{
+		height: 100px;
+		width: 2324px;
+		li{
+			float: left;
+			width: 322px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+}
