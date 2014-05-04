@@ -94,15 +94,15 @@ $font-head1: 'Open Sans', sans-serif;
 }
 .nav{
 	height: 25px;
-	width: auto;
-	background: #000;
+	width: 1155px;
+	background: #FFF;
 	padding: 25px 68px;
-
+	z-index: 1000000000000;
 	#nav-logo{
 	
 		height:20px;
 		width: 150px;
-		color: #FFF;
+		color: #000;
 		font-size: 20px;
 		float: left;
 		
@@ -129,7 +129,7 @@ $font-head1: 'Open Sans', sans-serif;
 		li{
 			padding: 25px 22px;
 			float: left;
-			color: #FFF;
+			color: #000;
 			font-size: 14px;
 			line-height: 20px;
 			height: 25px;
@@ -137,7 +137,7 @@ $font-head1: 'Open Sans', sans-serif;
 			{
 				text-decoration:none;
 				&:active,&:link,&:visited{
-					color: #F4F4F4;
+					color: #000;
 				}
 				&:hover{
 					color: #B3D4FC;
@@ -183,10 +183,7 @@ nav{
 	width: 460px;
 	height: 60px;
 	padding: 80px 115px 0px 115px;
-	a{
-		text-decoration: none;
-		color: #FFF;
-	}
+
 	#prev_image,#next_image,#portfolio{
 		float: left;
 		background: #E1E1E1;

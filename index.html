@@ -69,15 +69,11 @@
 			<p class="header2">Visuals work in every language. We communicate in images where words fail to transmit our message. Keep it simple.</p>
 			<nav>
 				<div  id="prev_image">
-					<a href="#">
 						<img src="resources/icons/f-prev.png">	
-					</a>
-					</div>
+				</div>
 				<div id="portfolio-nav"><a href="#">GO PORTFOLIO</a></div>
 				<div  id="next_image">
-					<a href="#">
-						<img src="resources/icons/f-next.png">
-					</a>
+					<img src="resources/icons/f-next.png">
 				</div>
 			</nav>
 			</div>
@@ -494,7 +490,7 @@
 				<div>
 					<p class="header1">CONTACT</p>
 					<div class="separator"></div>
-					<p class="header2">We like to create things with fun, like-minded people.Feel free to say hello!</p>
+					<p class="header2">We like to create things with fun, like-minded people. Feel free to say hello!</p>
 				</div>
 			</div>
 			<section id="contact-info">
@@ -503,15 +499,15 @@
 					<p class="header3">Visit Our Office</p>
 					<span><img src="resources/icons/adress-ico.png">
 						<p class="contact-text-1">Adress:</p>
-						<p class="contact-text-2">1234 Street Name, City Name</p>
+						<p class="contact-text-2 less">1234 Street Name, City Name</p>
 					</span>
 					<span><img src="resources/icons/phone-ico.png">
 						<p class="contact-text-1">Phone:</p>
-						<p class="contact-text-2">(123) 456-7890</p>
+						<p class="contact-text-2 less">(123) 456-7890</p>
 					</span>
 					<span><img src="resources/icons/mail-ico.png">
 						<p class="contact-text-1">Email:</p>
-						<p class="contact-text-2">theme@solido.com</p>
+						<p class="contact-text-2 less">theme@solido.com</p>
 					</span>
 				</div>
 				<div class="contact-info-col">
@@ -519,34 +515,42 @@
 					<p class="header3">Business Hours</p>
 					<span><img src="resources/icons/hours-ico.png">
 						<p class="contact-text-1">Mon.-Fri.</p>
-						<p class="contact-text-2">8am to 5pm</p>
+						<p class="contact-text-2 less">8am to 5pm</p>
 					</span>
 					<span><img src="resources/icons/hours-ico.png">
 						<p class="contact-text-1">Sat.</p>
-						<p class="contact-text-2">8am to 11am</p>
+						<p class="contact-text-2 more" >8am to 11am</p>
 					</span>
 					<span><img src="resources/icons/hours-ico.png">
 						<p class="contact-text-1">Sun</p>
-						<p class="contact-text-2">Closed</p>
+						<p class="contact-text-2 more">Closed</p>
 					</span>
 				</div>
-				<div>
+				<div class="contact-info-col">
 					<input type="text" value="FULL NAME" name="fName">
 					<input type="text" value="YOUR EMAIL" name="email">
-					<textarea value="YOUR MESSAGE"></textarea>
+					<textarea rows="6">TYPE MESSAGE</textarea>
 					<input type="submit" value="SEND MESSAGE" class="light">
 				</div>
 			</section>
 		</article>
-		<article ic="map"></article>
-		<article id="footer">
-			<div id="footer-cont">
-				<span id="foot-fb" class="foot-social"></span>
-				<span id="foot-tw" class="foot-social"></span>
-				<span id="foot-gplus" class="foot-social"></span>
+		<article id="map">
+			<div id="map-cont"></div>
+			<div id="footer">
+				<div id="footer-cont">
+					<div id="footer-icons"> 
+						<div id="foot-fb" class="foot-social"></div>
+						<div id="foot-tw" class="foot-social"></div>
+						<div id="foot-gplus" class="foot-social"></div>
+					</div>
+				</div>
 				<p class="foot-text"> 2013 @ Solido. All rights reserved.</p>
 			</div>
 		</article>
+		
 	<script src="js/jquery.screen.js"></script>
+	<script src="js/jquery.carousel-head.js"></script>
+	<script src="js/jquery.navbar.js"></script>
+	<script src="js/jquery.headline.js"></script>
 </body>
 </html>
