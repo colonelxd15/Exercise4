@@ -7,30 +7,31 @@ jQuery(document).ready(function(){
 	var projects = 120;
 	var coffee = 250;
 	var scrollVal;
-	
+	var executed = false;
 	$(window).scroll(function(){
 		scrollVal = $(window).scrollTop();
-		if(scrollVal >= 3787){
-			while(counter<=limit)
-			{
-				if(counter <= tweets)
-				{
-					$('p.header7#tweet-fact').delay(10000).html(counter);
-				}
-				if(counter <= clients)
-				{	
-					$('p.heacd der7#client-fact').delay(10000).html(counter);	
-				}cd 
-				if(counter <= projects)
-				{	
-					$('p.header7#project-fact').delay(10000).html(counter);
-				}
-				if(counter <= coffee)
-				{
-					$('p.header7#coffee-fact').delay(10000).html(counter);
-				}
-				counter++;
-			}
+		if((scrollVal >= 3826) && !executed){
+			$('p.header7#tweet-fact').countTo({  
+				from: 00,
+      			to: 99,
+        		speed: 5000,
+        		refreshInterval: 50,});
+			$('p.header7#client-fact').countTo({  
+				from: 00,
+      			to: 85,
+        		speed: 5000,
+        		refreshInterval: 50,});	
+			$('p.header7#project-fact').countTo({  
+				from: 00,
+      			to: 120,
+        		speed: 5000,
+        		refreshInterval: 50,});
+			$('p.header7#coffee-fact').countTo({  
+				from: 00,
+      			to: 250,
+        		speed: 5000,
+        		refreshInterval: 50,});
+			executed = true;
 		}
 
 	})	

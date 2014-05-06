@@ -1156,6 +1156,57 @@ input[type="submit"].light {
 #services .serv-cont #clock {
   background: url("../resources/icons/sl-icons.png") -440px 0px #4cddf3;
 }
+/* line 36, ../sass/screen/_services.scss */
+#services .serv-cont #tool:hover, #services .serv-cont #diamond:hover, #services .serv-cont #globe:hover, #services .serv-cont #pin:hover, #services .serv-cont #clock:hover {
+  background-color: #E6E6E6;
+}
+/* line 40, ../sass/screen/_services.scss */
+#services .serv-cont .tooltip {
+  display: none;
+  position: absolute;
+  width: 220px;
+  background: #000;
+  padding: 5px 16px;
+  margin-bottom: 30px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -130px;
+  top: auto;
+}
+/* line 51, ../sass/screen/_services.scss */
+#services .serv-cont .tooltip ul {
+  color: #FFF;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 300px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+}
+/* line 59, ../sass/screen/_services.scss */
+#services .serv-cont .tooltip ul li span {
+  height: 15px;
+  width: 15px;
+  background: url("../resources/icons/ckeck.png") no-repeat #4cddf3;
+  float: left;
+  margin: 7px 7px -3px 0px;
+}
+/* line 66, ../sass/screen/_services.scss */
+#services .serv-cont .tooltip ul li p {
+  float: left;
+}
+/* line 71, ../sass/screen/_services.scss */
+#services .serv-cont .tooltip .arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  margin-left: -8px;
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-top: 8px solid rgba(6, 6, 6, 0.85);
+}
 
 /* line 1, ../sass/screen/_services-2.scss */
 #service {

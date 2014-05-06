@@ -32,5 +32,54 @@
 			#clock{
 				background: url('../resources/icons/sl-icons.png') -440px 0px #4CDDF3;
 			}
+			#tool,#diamond,#globe,#pin,#clock{
+				&:hover{
+					background-color: #E6E6E6;
+				}
+			}
+			.tooltip{
+				display: none;
+				position: absolute;
+				width: 220px;
+				background: #000;
+				padding: 5px 16px;
+				margin-bottom: 30px;
+				bottom: 100%;
+				left: 50%;
+				margin-left: -130px;
+				top: auto;
+				ul{
+					color: #FFF;
+					font-size: 14px;
+					text-align: left;
+					font-weight: 300px;
+					font-family: 'Open Sans', sans-serif;
+					line-height: 30px;
+					li{
+						span{
+							height: 15px;
+							width: 15px;
+							background: url('../resources/icons/ckeck.png') no-repeat #4CDDF3;
+							float: left;
+							margin: 7px 7px -3px 0px;
+						}	
+						p{
+							float: left;
+						}
+					}
+				}
+				.arrow-down{
+					position: absolute;
+					left: 50%;
+					bottom: -8px;
+					margin-left: -8px;
+					display: none;
+					width: 0px;
+					height: 0px;
+					border-left: 8px solid rgba(0, 0, 0, 0);
+					border-right: 8px solid rgba(0, 0, 0, 0);
+					border-top: 8px solid rgba(6, 6, 6, 0.85);
+				}
+			}
 	}	
 }
