@@ -2,7 +2,7 @@ $font-head1: 'Open Sans', sans-serif;
 #loader{
 	background: #000;
 	z-index: -1;
-	display: none;
+	display: block;
 	width: 100%;
 	height: 100%;
 }
@@ -137,7 +137,7 @@ $font-head1: 'Open Sans', sans-serif;
 			{
 				text-decoration:none;
 				&:active,&:link,&:visited{
-					color: #000;
+					color: #414141;
 				}
 				&:hover{
 					color: #B3D4FC;
@@ -159,20 +159,19 @@ $font-head1: 'Open Sans', sans-serif;
 .separator1{
 	width: 100px;
 }
-
+#nav-wrapper{
+	height: 75px;
+	width: 100%;
+	position: relative;
+}
 #about{
 	background: #F7F7F7;
 	padding-bottom: 65px;
 }
-#about-header{
-	height: 275px;
-	width: 690px;
-	padding: 130px 0px 115px 0px;
-	margin:auto;
-}
+
 #featured-slider{
-	width: 2500px;
-	margin-left: -625px;
+	width: 2485px;
+	margin-left: -595px;
 	.featured-slider-image{
 		width: 467px;
 		float: left;
@@ -183,7 +182,11 @@ nav{
 	width: 460px;
 	height: 60px;
 	padding: 80px 115px 0px 115px;
-
+	margin: auto;
+	a{
+		text-decoration: none;
+		color: #FFF;
+	}
 	#prev_image,#next_image,#portfolio{
 		float: left;
 		background: #E1E1E1;
@@ -233,8 +236,8 @@ nav{
 #head_next_image, #head_prev_image{
 	position: absolute;
 	top: 170px;
-	height: 60px;
-	width: 60px;
+	height: 80px;
+	width: 80px;
 }
 #head_next_image{
 	right: 0px;
@@ -300,31 +303,28 @@ nav{
 	background: #FFF;
 	.sect-col-2{
 		height: 461px;
-		width: 550px;
+		width: 500px;
 		float: left;
-		padding: 0px 10px;
+		padding: 0px 35px;
 		position: relative;
-		#next_image,#prev_image{
-			top: 235px;
+		#next_image_studio,
+		#prev_image_studio{
+			top: 250px;
 			position: absolute;
-			width: 35px;
-			height: 65px;
-			background: #111;
-			&:hover{
-				background: #4CDDF3;
-			}
+			width: 40px;
+			height: 58px;
+			opacity: 0;
 		}
-		#next_image{
-			right: 0px;
-			background: url('../resources/icons/c-arrows.png') -15px -95px;
+
+		#next_image_studio{
+			right: -20px;
+			background: url('../resources/icons/c-arrows.png') -7px -98px #4CDDF3;
 			background-repeat: 	no-repeat;
-			background-color: #000;
 		}
-		#prev_image{
-			left: 0px;
-			background: url('../resources/icons/c-arrows.png') -15px -10px;
+		#prev_image_studio{
+			left: -20px;
+			background: url('../resources/icons/c-arrows.png') -17px -14px #4CDDF3;
 			background-repeat: no-repeat;
-			background-color: #000;
 		}
 		#office-carousel-cont{
 			width: 500px;
@@ -332,10 +332,31 @@ nav{
 			overflow: hidden;
 			margin: auto;
 			#office-carousel{
-				width: 1000px;
+				width: 1510px;
 				height: 350px;
 				img{
 					margin: 0px;
+				}
+			}
+			#dot-holder{
+				width: 110px;
+				height: 50px;
+				position: absolute;
+				left: 230px;
+				.dot{
+					height: 10px;
+					width: 10px;
+					border-radius: 10px;
+					border: 1px solid #4CDDF3;
+					float: left;
+					margin: 30px 10px 0px 10px;
+					z-index: 1000;
+					&:hover{
+						background: #4CDDF3;
+					}
+				}
+				#present{
+					background: #4CDDF3;
 				}
 			}
 		}
@@ -378,15 +399,7 @@ nav{
 		height: 100%;
 	}
 }
-.pos-abs{
-	position: absolute;
-	z-index: 100;
-	width: 100%;
-	top: 140px;
-	.header1{
-		margin: 20px 0px;
-	}
-}
+
 #team{
 	background: #F7F7F7;
 	width: auto;
@@ -458,25 +471,4 @@ nav{
 			}
 		}
 	}
-}
-.pos-rel{
-	position: relative;
-	z-index: 100;
-	width: 600px;
-	margin: 50px auto 20px auto;
-	.header1{
-		margin: 20px 0px;
-	}
-}
-.header3{
-	margin: 10px auto 50px auto;
-	text-align: center;
-}
-p.header2{
-	width: 700px;
-	padding: 50px;
-}
-p.header1{
-	width: auto;
-	margin-bottom: 30px;
 }

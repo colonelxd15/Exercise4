@@ -1,0 +1,78 @@
+#serv-header{
+	width: 800px;
+	margin: auto;
+}
+#about-header{
+	height: 275px;
+	width: 800px;
+	padding: 130px 0px 115px 0px;
+	margin:auto;
+}
+#contact-header{
+	width: 1180px;
+	margin: auto;	
+	img{
+		vertical-align: middle;
+	}
+	div{
+		p.header2{
+			width: 445px;
+		}
+	}
+}
+#facts-header{
+	margin: 50px auto;
+	width: 300px;
+	height: 100px;
+	position: relative;
+	.header3{
+		margin: 0px auto 50px auto;
+	}
+	.header4{
+		margin: 20px auto;
+	}
+}
+#para-header{
+	height: 200px;
+	width: 480px;
+	margin: 120px auto 50px auto;
+	.header4{
+		opacity: 0.5;
+	}
+}
+.port-header{
+	padding-top: 120px;
+	background: #F7F7F7;
+}
+
+
+.pos-rel{
+	position: relative;
+	z-index: 100;
+	width: 800px;
+	margin: 50px auto 20px auto;
+	.header1{
+		margin: 20px 0px;
+	}
+}
+.pos-abs{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 140px;
+	.header1{
+		margin: 20px 0px;
+	}
+}
+.header3{
+	margin: 10px auto 50px auto;
+	text-align: center;
+}
+p.header2{
+	width: 800px;
+	padding: 50px 0px;
+}
+p.header1{
+	width: auto;
+	margin-bottom: 30px;
+}

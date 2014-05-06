@@ -16,6 +16,7 @@ jQuery(document).ready(function(){
 	function moveLeft(){
 		clearInterval(timer);
 		$('#head-images img:last-child').prependTo('#head-images');
+		autoSlide();
 	};
 
 	function autoSlide(){

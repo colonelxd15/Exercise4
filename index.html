@@ -40,11 +40,11 @@
 
 			<div id="head-note" class="">We build perfection, so you can ge a product which complies with our quality standards. Take action & keep it simple.</div>
 				<div id="link1">
-					<a href="#about" id="" class="">GET STARTED</a>
+					<a href="#about">GET STARTED</a>
 				</div>
 		</div>
 	</div>
-	
+	<div id="nav-wrapper">
 	<div class="nav default-color">
 		<div id="nav-logo">
 			<div id="logo">
@@ -53,14 +53,15 @@
 			SOLIDO
 		</div>
 		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">TEAM</a></li>
-			<li><a href="#">SERVICES</a></li>
-			<li><a href="#">PORTFOLIO</a></li>
-			<li><a href="#">CONTACT</a></li>
+			<li><a href="#home-section">HOME</a></li>
+			<li><a href="#about-section">ABOUT</a></li>
+			<li><a href="#team-section">TEAM</a></li>
+			<li><a href="#services-section">SERVICES</a></li>
+			<li><a href="#portfolio-section">PORTFOLIO</a></li>
+			<li><a href="#contact-section">CONTACT</a></li>
 		</ul>
 	</div>
+</div>
 	<div id="about">
 		<article id="about">
 			<div id="about-header">
@@ -71,7 +72,7 @@
 				<div  id="prev_image">
 						<img src="resources/icons/f-prev.png">	
 				</div>
-				<div id="portfolio-nav"><a href="#">GO PORTFOLIO</a></div>
+				<div id="portfolio-nav"><a href="#portfolio-section">GO PORTFOLIO</a></div>
 				<div  id="next_image">
 					<img src="resources/icons/f-next.png">
 				</div>
@@ -98,7 +99,7 @@
 						<div>MOTION REEL</div>
 					</div>
 					<div class="featured-slider-image">
-						<img src="resources/feat/feat-01.jpg">
+						<img src="resources/feat/feat-05.jpg">
 						<div>SHUTTER ISLAND</div>
 					</div>
 				</section>
@@ -106,19 +107,23 @@
 		</article>
 		<article id="studio-about">
 			<section class="sect-col-2">
-				<div id="next_image">
+				<div class="next" id="next_image_studio">
 				</div>
-				<div id="prev_image">
+				<div class="prev" id="prev_image_studio">
 				</div>
 				<header class="header4">OUR OFFICES</header>
 				<header class="header3">Amazing Studio</header>
 				<div id="office-carousel-cont">
 					<div id="office-carousel">
-						<img src="resources/team/caroussel-01.jpg">
-						<img src="resources/team/caroussel-02.jpg">
+						<img src="resources/carousel/caroussel-01.jpg">
+						<img src="resources/carousel/caroussel-02.jpg">
+						<img src="resources/carousel/caroussel-03.jpg">
 					</div>
-					<span></span>
-					<span></span>
+					<div id="dot-holder" class="dot-cont">
+						<div class="dot" id="present"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
 				</div>
 			</section>
 			<section  class="sect-col-2">
@@ -233,22 +238,22 @@
 			</section>
 			<section class="facts-cont">
 				<div class="facts-cont-img" id="tweet"></div>
-				<p class="header7">000</p>
+				<p class="header7" id="tweet-fact">000</p>
 				<p class="facts-desc">TWEETS</p>
 			</section>
 			<section class="facts-cont">
 				<div class="facts-cont-img" id="client"></div>
-				<p class="header7">000</p>
+				<p class="header7" id="client-fact">000</p>
 				<p class="facts-desc">CLIENTS WORKED</p>
 			</section>
 			<section class="facts-cont">
 				<div class="facts-cont-img" id="project"></div>
-				<p class="header7">000</p>
+				<p class="header7" id="project-fact">000</p>
 				<p class="facts-desc">PROJECTS COMPLETED</p>
 			</section>
 			<section class="facts-cont">
 				<div class="facts-cont-img" id="coffee"></div>
-				<p class="header7">000</p>
+				<p class="header7" id="coffee-fact">000</p>
 				<p class="facts-desc">COFFEE CUPS</p>
 			</section>
 		</article>
@@ -331,6 +336,9 @@
 					<p class="header4">TESTIMONIALS</p>
 					<p class="header3">Our Happy Clients</p>
 				</div>
+
+				<div class="prev" id="prev_image_test"></div>
+				<div class="next" id="next_image_test"></div>
 				<div id="car-holder">
 				<section id="testimonials-carousel">
 					<div class="t-car-cont">
@@ -369,7 +377,13 @@
 							<p class="t-car-text2">Steve Ronald,<span class="t-car-text">Developer</span></p>
 						</div>
 					</div>
+				
 				</section>
+				</div>
+				<div class="dot-cont" id="dot-holder-test">
+					<div class="dot" id="present-test"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
 				</div>
 			</section>
 		</article>
@@ -406,7 +420,7 @@
 							<p class="client-text-2">PHOTOGRAPHY</p>
 						</section>
 					</div>
-					<div class="clients-info graphic">
+					<div class="clients-info graphic motion">
 						<img src="resources/thumb/thumb-03.jpg">
 						<section>
 							<div></div>
@@ -414,7 +428,7 @@
 							<p class="client-text-2">GRAPHIC DESIGN</p>
 						</section>
 					</div>
-					<div class="clients-info graphic">
+					<div class="clients-info graphic motion">
 						<img src="resources/thumb/thumb-04.jpg">
 						<section>
 							<div></div>
@@ -430,7 +444,7 @@
 							<p class="client-text-2">WEBSITE</p>
 						</section>
 					</div>
-					<div class="clients-info web">
+					<div class="clients-info web motion">
 						<img src="resources/thumb/thumb-06.jpg">
 						<section>
 							<div></div>
@@ -454,7 +468,7 @@
 							<p class="client-text-2">PHOTOGRAPHY</p>
 						</section>
 					</div>
-					<div class="clients-info graphic">
+					<div class="clients-info graphic motion">
 						<img src="resources/thumb/thumb-09.jpg">
 						<section>
 							<div></div>
@@ -540,17 +554,27 @@
 				<div id="footer-cont">
 					<div id="footer-icons"> 
 						<div id="foot-fb" class="foot-social"></div>
-						<div id="foot-tw" class="foot-social"></div>
+an						<div id="foot-tw" class="foot-social"></div>
 						<div id="foot-gplus" class="foot-social"></div>
 					</div>
 				</div>
 				<p class="foot-text"> 2013 @ Solido. All rights reserved.</p>
 			</div>
 		</article>
-		
+	
+	<script src="js/jquery.load.js"></script>
 	<script src="js/jquery.screen.js"></script>
+	<script src="js/jquery.scroll.js"></script>
 	<script src="js/jquery.carousel-head.js"></script>
 	<script src="js/jquery.navbar.js"></script>
-	<script src="js/jquery.headline.js"></script>
+	<!--script src="js/jquery.headline.js"></script-->
+	<script src="js/jquery.featured.js"></script>
+	<script src="js/jquery.studio-car.js"></script>
+	<script src="js/jquery.testimonials.js"></script>
+	<!--script src="js/jquery.fun-facts.js"></script-->
+	<script src="js/jquery.progressbar.js"></script>
+	<script src="js/jquery.portfolio.js"></script>
+	<script src="js/jquery.portfolio-car.js"></script>
+	
 </body>
 </html>

@@ -2,12 +2,7 @@
 #services {
   padding: 195px 68px 0px 68px;
 }
-/* line 3, ../../sass/screen/services.scss */
-#services #serv-header {
-  width: 700px;
-  margin: auto;
-}
-/* line 7, ../../sass/screen/services.scss */
+/* line 4, ../../sass/screen/services.scss */
 #services .serv-cont {
   position: relative;
   float: left;
@@ -15,62 +10,66 @@
   width: 171px;
   padding: 30px;
 }
-/* line 13, ../../sass/screen/services.scss */
+/* line 10, ../../sass/screen/services.scss */
 #services .serv-cont .circle {
   height: 110px;
   width: 110px;
   border-radius: 110px;
   margin: 10px auto 30px;
 }
-/* line 19, ../../sass/screen/services.scss */
+/* line 16, ../../sass/screen/services.scss */
 #services .serv-cont p {
   text-align: center;
 }
-/* line 23, ../../sass/screen/services.scss */
+/* line 20, ../../sass/screen/services.scss */
 #services .serv-cont #tool {
   background: url("../resources/icons/sl-icons.png") 0px 0px #4cddf3;
 }
-/* line 26, ../../sass/screen/services.scss */
+/* line 23, ../../sass/screen/services.scss */
 #services .serv-cont #diamond {
   background: url("../resources/icons/sl-icons.png") -110px 0px #4cddf3;
 }
-/* line 29, ../../sass/screen/services.scss */
+/* line 26, ../../sass/screen/services.scss */
 #services .serv-cont #globe {
   background: url("../resources/icons/sl-icons.png") -220px 0px #4cddf3;
 }
-/* line 32, ../../sass/screen/services.scss */
+/* line 29, ../../sass/screen/services.scss */
 #services .serv-cont #pin {
   background: url("../resources/icons/sl-icons.png") -330px 0px #4cddf3;
 }
-/* line 35, ../../sass/screen/services.scss */
+/* line 32, ../../sass/screen/services.scss */
 #services .serv-cont #clock {
   background: url("../resources/icons/sl-icons.png") -440px 0px #4cddf3;
 }
 
-/* line 40, ../../sass/screen/services.scss */
+/* line 37, ../../sass/screen/services.scss */
 #services-2 {
   position: relative;
 }
-/* line 42, ../../sass/screen/services.scss */
+/* line 39, ../../sass/screen/services.scss */
 #services-2 .cont-serv {
   width: 40%;
   height: 40%;
   padding: 5%;
 }
-/* line 46, ../../sass/screen/services.scss */
+/* line 43, ../../sass/screen/services.scss */
 #services-2 .cont-serv .cont-serv-header {
   height: 200px;
 }
-/* line 49, ../../sass/screen/services.scss */
+/* line 46, ../../sass/screen/services.scss */
 #services-2 .cont-serv .prog-bg {
-  height: 30px;
+  height: 36px;
   width: 90%;
   margin: 30px auto;
   background: #DEDEDE;
 }
-/* line 54, ../../sass/screen/services.scss */
+/* line 51, ../../sass/screen/services.scss */
 #services-2 .cont-serv .prog-bg .prog-fill {
   background: url("../resources/icons/skills-sprite.png") #4cddf3;
+}
+/* line 53, ../../sass/screen/services.scss */
+#services-2 .cont-serv .prog-bg .prog-fill p {
+  float: left;
 }
 /* line 57, ../../sass/screen/services.scss */
 #services-2 .cont-serv .prog-bg #60 {
