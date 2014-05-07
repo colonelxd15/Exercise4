@@ -6,14 +6,14 @@ jQuery(document).ready(function(){
 
 	$(window).scroll(function(){
 		scrollVal  = $(window).scrollTop();
-		if(scrollVal >= 6027)
+		if(scrollVal >= 5358)
 		{
-			$('.prog-fill#w-60').animate({'width':'60%'},3000);
-			$('.prog-fill#w-70').animate({'width':'70%'},3000);
-			$('.prog-fill#w-80').animate({'width':'80%'},3000);
-			$('.prog-fill#w-90').animate({'width':'90%'},3000);
-			$('.prog-fill#w-100').animate({'width':'100%'},3000);
+			$('.prog-fill#w-60').animate({'width':'60%'},2000);
+			$('.prog-fill#w-70').animate({'width':'70%'},2000);
+			$('.prog-fill#w-80').animate({'width':'80%'},2000);
+			$('.prog-fill#w-90').animate({'width':'90%'},2000);
+			$('.prog-fill#w-100').animate({'width':'100%'},2000);
+			$('.prog-fill span').animate({'opacity':'1.0'},2000);
 		}
-
 	});
 });

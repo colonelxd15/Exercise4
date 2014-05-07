@@ -22,7 +22,7 @@
 		padding: 51px 20px;
 		position: absolute;
 		opacity: 0;
-		background: rgba(76, 221, 243, 0.9);
+		background: rgba(76, 221, 243, 0.85);
 		
 		top: 0;
 		div{
@@ -37,6 +37,17 @@
 		.client-text-1,
 		.client-text-2{
 			text-align: center;
+		}
+	}
+	&:hover{
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+		section{
+			opacity: 1;
+
 		}
 	}
 }

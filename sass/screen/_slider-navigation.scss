@@ -36,7 +36,7 @@
 }
 #dot-holder-test{
 	left: 268px;
-	bottom: 40px;
+	bottom: 0px;
 }
 	.dot{
 		height: 10px;
@@ -55,4 +55,17 @@
 }
 #present-test{
 	background: #4CDDF3;
+}
+#goto-top{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	opacity: 0.8;
+	line-height: 55px;
+	position: fixed;
+	bottom: 50px;
+	right: 40px;
+	color: #FFF;
+	text-align: center;
+	font-size: 25px;
 }

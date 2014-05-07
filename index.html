@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet"/>
+		<link href="/stylesheets/effects.css" media="screen, projection" rel="stylesheet"/>
 		<link href="/stylesheets/print.css" media="print" rel="stylesheet"/>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true"></script>
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<script src="js/counter.js"></script>
+		<script src="js/gmaps.js"></script>
+		<script src="magnific.popup/jquery.magnific-popup.js"></script>
+		<link rel="stylesheet" href="magnific.popup/magnific-popup.css">
 		<!--[if IE]>
 		    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<![endif]-->
@@ -15,6 +21,8 @@
 	<div id="loader">
 		<img src="resources/icons/loading.gif">
 	</div>
+	<div id="goto-top">^</div>
+
 	<div id="head-slider">
 		<div id="head-images">
 			<img src="resources/head-image/01.jpg">
@@ -23,8 +31,6 @@
 			<img src="resources/head-image/04.jpg">
 		</div>
 		<div id="overlay"></div>
-		
-	</div>
 	</div>
 	<div id="title-cont">
 		<div id="head-cont">
@@ -32,9 +38,9 @@
 			<img src="resources/icons/s-next.png" id="head_next_image">
 			<div id="hello" class="head1">Hello</div>
 			<ul>
-				<li id="active">WE ARE SMART</li>
-				<li>WE ARE FRESH</li>
-				<li>WE ARE SOLIDO</li>
+				<li id="active" class="fadeInUp">WE ARE SMART</li>
+				<li class="fadeInUp">WE ARE FRESH</li>
+				<li class="fadeInUp">WE ARE SOLIDO</li>
 			</ul>
 					
 			<div class="separator"></div>
@@ -63,7 +69,7 @@
 		</ul>
 	</div>
 </div>
-	<div id="about">
+	<div id="about-cont">
 		<article id="about">
 			<div id="about-header">
 			<p class="header1">FEATURED WORKS</p>
@@ -83,25 +89,64 @@
 			
 			<div id="featured-slider-cont">
 				<section id="featured-slider">
+					
+						<div class="featured-slider-image">
+							<div class="image-overlay">
+								<div class="plus-icon"></div>
+								<div class="featured-meta">
+									<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+									<p>PHOTOGRAPHY</p>
+								</div>
+							</div>
+							<img src="resources/feat/feat-01.jpg">
+							<div class="featured-desc">YOUNG ECKLESS</div>
+						</div>
+					
 					<div class="featured-slider-image">
-						<img src="resources/feat/feat-01.jpg">
-						<div>YOUNG ECKLESS</div>
-					</div>
-					<div class="featured-slider-image">
+						<div class="image-overlay">
+							<div class="plus-icon"></div>
+							<div class="featured-meta">
+								<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+								<p>PHOTOGRAPHY</p>
+							</div>
+						</div>
 						<img src="resources/feat/feat-02.jpg">
-						<div>SWEET HOME</div>
+						<div  class="featured-desc">SWEET HOME</div>
 					</div>
+					
 					<div class="featured-slider-image">
+						<div class="image-overlay">
+							<div class="plus-icon"></div>
+							<div class="featured-meta">
+								<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+								<p>PHOTOGRAPHY</p>
+							</div>
+						</div>
 						<img src="resources/feat/feat-03.jpg">
-						<div>DESK SHOP</div>
+						<div  class="featured-desc">DESK SHOP</div>
 					</div>
+					
 					<div class="featured-slider-image">
+						<div class="image-overlay">
+							<div class="plus-icon"></div>
+							<div class="featured-meta">
+								<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+								<p>PHOTOGRAPHY</p>
+							</div>
+						</div>
 						<img src="resources/feat/feat-04.jpg">
-						<div>MOTION REEL</div>
+						<div class="featured-desc">MOTION REEL</div>
 					</div>
 					<div class="featured-slider-image">
+						<div class="image-overlay">
+							<div class="plus-icon"></div>
+							<div class="featured-meta">
+								<p>SINGLE PORTFOLIO - WIDE IMAGE</p>
+								<p>PHOTOGRAPHY</p>
+							</div>
+						</div>
 						<img src="resources/feat/feat-05.jpg">
-						<div>SHUTTER ISLAND</div>
+						<div  class="featured-desc">SHUTTER ISLAND</div>
 					</div>
 				</section>
 			</div>
@@ -164,8 +209,10 @@
 			<div class="team-prof">
 				<div class="team-prof-pic">
 				<img src="resources/team/team-01.jpg">
-				<span class="email"></span>
-				<p class="email-add">JOHN @SOLIDO.COM</p>
+				<div class="team-prof-overlay">
+					<div class="email"></div>
+					<p class="email-add">JOHN @SOLIDO.COM</p>
+				</div>
 				</div>
 				<div class="profile">
 					<p class="header6">JOHN MATAS</p>
@@ -181,8 +228,10 @@
 			<div class="team-prof">
 				<div class="team-prof-pic">
 				<img src="resources/team/team-02.jpg">
-				<span class="email"></span>
-				<p class="email-add">LIA@SOLIDO.COM</p>
+				<div class="team-prof-overlay">
+					<div class="email"></div>
+					<p class="email-add">LIA@SOLIDO.COM</p>
+				</div>
 				</div>
 				<div class="profile">
 					<p class="header6">LIA DUPROIS</p>
@@ -198,8 +247,10 @@
 			<div class="team-prof">
 				<div class="team-prof-pic">
 				<img src="resources/team/team-03.jpg">
-				<span class="email"></span>
-				<p class="email-add">DIEGO@SOLIDO.COM</p>
+				<div class="team-prof-overlay">
+					<div class="email"></div>
+					<p class="email-add">DIEGO@SOLIDO.COM</p>
+				</div>
 				</div>
 				<div class="profile">
 					<p class="header6">DIEGO SMITH</p>
@@ -215,8 +266,10 @@
 			<div class="team-prof">
 				<div class="team-prof-pic">
 					<img src="resources/team/team-04.jpg">
-					<span class="email"></span>
-					<p class="email-add">ELISA@SOLIDO.COM</p>
+					<div class="team-prof-overlay">		
+						<div class="email"></div>
+						<p class="email-add">ELISA@SOLIDO.COM</p>
+					</div>
 				</div>
 				<div class="profile">
 					<p class="header6">ELISA RONALD</p>
@@ -606,12 +659,13 @@
 			</div>
 		</article>
 	
-	// <script src="js/jquery.load.js"></script>
+	<!--script src="js/jquery.load.js"></script-->
 	<script src="js/jquery.screen.js"></script>
 	<script src="js/jquery.scroll.js"></script>
+	<script src="js/jquery.map.js"></script>
 	<script src="js/jquery.carousel-head.js"></script>
 	<script src="js/jquery.navbar.js"></script>
-	<!--script src="js/jquery.headline.js"></script-->
+	<script src="js/jquery.headline.js"></script>
 	<script src="js/jquery.featured.js"></script>
 	<script src="js/jquery.studio-car.js"></script>
 	<script src="js/jquery.testimonials.js"></script>
@@ -620,6 +674,7 @@
 	<script src="js/jquery.portfolio.js"></script>
 	<script src="js/jquery.portfolio-car.js"></script>
 	<script src="js/jquery.services-tooltip.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
 	
 </body>
 </html>
